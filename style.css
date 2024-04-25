@@ -795,7 +795,7 @@ nav {
 }
 
 .footer {
-    background: url(/assets/042.png) no-repeat;
+    background: url(assets/042.png) no-repeat;
     background-size: cover;
     margin: 0;
     width: 100%;
