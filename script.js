@@ -47,7 +47,7 @@ window.onload = function() {
       }, 500); // Wait for the fade out transition to complete (500ms)
     }
   
-    setInterval(toggleWord, 4000); // Change word every 3 seconds
+    setInterval(toggleWord, 3000); // Change word every 3 seconds
   };
   
   
