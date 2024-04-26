@@ -41,7 +41,7 @@ nav {
     transition: opacity 0.5s ease;
     color: white;
     background:#1949EA;
-    padding:  5px;
+    padding: 0px 5px 5px 5px;
     border-radius: 10px;
 }
 
@@ -1305,6 +1305,12 @@ nav {
         display: none;
     }
 
+    .hero-flex {
+        flex-direction: column-reverse!important;
+    }
+    .hero-container {
+        margin-top: 30px;
+    }
     .button-area {
         width: 100%;
     }
