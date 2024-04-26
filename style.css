@@ -1309,6 +1309,9 @@ nav {
     .mininav {
         display: none;
     }
+    .hero {
+        padding-top: 10px;
+    }
 
     .hero-flex {
         flex-direction: column-reverse!important;
