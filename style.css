@@ -55,7 +55,7 @@ nav {
 .hidden-menu {
     width: 100%;
     display: none;
-    height: 50%;
+    height: 80%;
     position: fixed;
     left: 0;
     z-index: -1;
@@ -1532,8 +1532,14 @@ nav {
         letter-spacing: -0.05em;
     }
 
+    .contact-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px!important;
+    }
+
     .theLast {
-        background: #0C1C2C;
         padding: 20px;
         width: 100%;
         position: absolute;
