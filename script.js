@@ -35,7 +35,7 @@ window.onload = function() {
 // TRANSITION BETWEEN TECH AND BUSINESS
   window.onload = function() {
     const wordElement = document.getElementById('tech');
-    const words = ['tech', 'business'];
+    const words = ['Tech', 'Business'];
     let currentIndex = 0;
   
     function toggleWord() {

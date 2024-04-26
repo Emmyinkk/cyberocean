@@ -39,6 +39,10 @@ nav {
 
 #tech {
     transition: opacity 0.5s ease;
+    color: white;
+    background:#1949EA;
+    padding:  5px;
+    border-radius: 10px;
 }
 
 .hide {
