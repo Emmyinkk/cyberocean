@@ -1050,7 +1050,7 @@ nav {
     justify-content: space-between;
   }
 
-  .theFloat1, .theFloat2, .theFloat3, .theFloat4 {
+  .theFloat1, .theFloat2, .theFloat3, .theFloat4, .theFloat5 {
     position: absolute;
   }
 
@@ -1073,6 +1073,12 @@ nav {
     transform: translate(-50%, -50%);
     left: 49%;
     top: 63%;
+    z-index: -1;
+  }
+  .theFloat5 {
+    transform: translate(-50%, -50%);
+    right: -10%;
+    top: 49%;
     z-index: -1;
   }
 
