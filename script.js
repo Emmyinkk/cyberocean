@@ -1,3 +1,18 @@
+// FOR THE SWITCHING OF TABS IN THE AVAILABLE SECTION
+window.onload = function() {
+  const buttons = document.querySelectorAll('.tab');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      const currentButton = document.querySelector('.showing');
+      currentButton.classList.remove('showing');
+      button.classList.add('showing');
+    });
+  });
+};  
+
+
+
 // FOR OPENING AND CLOSING OF THE HIDDEN NAVBAR
 function openNav() {
     const menuBar = document.querySelector('.hidden-menu');
@@ -14,20 +29,6 @@ function openNav() {
         
     }
 }
-
-
-// FOR THE SWITCHING OF TABS IN THE AVAILABLE SECTION
-window.onload = function() {
-    const buttons = document.querySelectorAll('.tab');
-  
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        const currentButton = document.querySelector('.showing');
-        currentButton.classList.remove('showing');
-        button.classList.add('showing');
-      });
-    });
-  };  
 
 
 
