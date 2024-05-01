@@ -771,7 +771,6 @@ nav {
     font-weight: 700;
     line-height: 21px;
     letter-spacing: -0.05em;
-    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -958,6 +957,7 @@ nav {
 
 .secondBoxed {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .small-img, .small-img2 {
@@ -982,10 +982,13 @@ nav {
 
 .chap {
     color:#0367FC!important;
-    font-size: 10px!important;
+    font-size: 15px!important;
     font-weight: 700!important;
     line-height: 15.8px!important;
     letter-spacing: -0.05em!important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .stared {
@@ -1615,7 +1618,6 @@ nav {
         font-weight: 700;
         line-height: 15px;
         letter-spacing: -0.05em;
-        text-align: left;
     }
 
     .tab p {
@@ -1623,7 +1625,7 @@ nav {
     }
 
     .tab {
-        width: 40%;
+        width: 20%;
         flex: 0 0 auto;
         text-align: center;
     }
@@ -1670,6 +1672,14 @@ nav {
         left: -35%;
         width: 100%;
       }
+
+      .videoWrapper {
+        width: 90%;
+    }
+
+    .review {
+        padding-bottom: 250px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -1682,6 +1692,10 @@ nav {
     }
 
     .box p {
-        font-size: 8px!important;
+        font-size: 6px!important;
+    }
+
+    .contact-line p {
+        font-size: 10px;
     }
 }
