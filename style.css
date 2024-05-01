@@ -408,8 +408,8 @@ nav {
 }
 
 .program {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .sessions h2 {
@@ -446,8 +446,8 @@ nav {
 }
 
 .feature {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .feature h2 {
@@ -531,8 +531,8 @@ nav {
 }
 
 .grow {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .grow-header h2{
@@ -579,8 +579,8 @@ nav {
 }
 
 .delivery {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .delivery-container h2 {
@@ -1016,8 +1016,12 @@ nav {
     justify-content: space-evenly;
     width: 80%;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.layers::-webkit-scrollbar {
+    display: none;
 }
 
 .tab {
@@ -1055,8 +1059,8 @@ nav {
 }
 
 .available {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .videoWrapper {
