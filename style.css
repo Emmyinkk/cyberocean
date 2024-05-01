@@ -1063,6 +1063,36 @@ nav {
     padding-bottom: 50px;
 }
 
+.video-block {
+    margin-top: 40px;
+}
+
+.video-flex {
+    gap: 30px;
+}
+
+.vHeader {
+    font-family: Aeonik;
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 49.2px;
+    letter-spacing: -0.05em;
+    text-align: left;
+}
+
+.vHeader span {
+    color:#1949EA;
+}
+.vText {
+    font-family: Aeonik;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #6B6B6B;
+}
+
 .videoWrapper {
     position: relative;
     padding-bottom: 40%;
