@@ -1,15 +1,15 @@
 // FOR THE SWITCHING OF TABS IN THE AVAILABLE SECTION
-window.onload = function() {
-  const buttons = document.querySelectorAll('.tab');
+const divs = document.querySelectorAll('.tab');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      const currentButton = document.querySelector('.showing');
-      currentButton.classList.remove('showing');
-      button.classList.add('showing');
+  divs.forEach(div => {
+    div.addEventListener('click', function() {
+      // Remove the "showing" class from all divs
+      divs.forEach(d => d.classList.remove('showing'));
+      
+      // Add the "showing" class to the clicked div
+      this.classList.add('showing');
     });
   });
-};  
 
 
 
