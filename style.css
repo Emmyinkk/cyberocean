@@ -1279,7 +1279,7 @@ nav {
     .overlap  {
         padding: 20px;
         width: 90%;
-        bottom: -10%;
+        bottom: -13%;
     }
     
     .overlap p {
@@ -1356,6 +1356,14 @@ nav {
         right: -4%;
         top: 47%;
       } */
+
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 40%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 300px;
+      }
 }
 
 @media screen and (max-width: 767px) {
