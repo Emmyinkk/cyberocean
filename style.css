@@ -238,9 +238,10 @@ nav {
     text-align: center;
     text-decoration: none;
     transition: .3s ease-in-out;
+    position: relative;
 }
 
-.link-list:hover, .active a{
+.addLine:hover a, .active, .active a {
     color: #1949EA;
     font-weight: 700;
 }
@@ -250,6 +251,10 @@ nav {
     text-align: center;
 }
 
+.addLine a {
+    transition: .1s ease-in-out;
+}
+
 .line {
     position: absolute;
     background:#1949EA;
@@ -257,14 +262,16 @@ nav {
     height: 2px;
     transition: .3s ease-in-out;
     width: 0;
+    bottom: -5px;
+    left: 0;
 }
 
 .addLine:hover .line {
-    width: 75%;
+    width: 100%;
 }
 
 .active .line {
-    width: 75%;
+    width: 100%;
 }
 
 .hero-container, .sessions, .feature, .grow, .delivery, .available, .instructor {
@@ -333,7 +340,7 @@ nav {
     justify-content: center;
 }
 
-.hero {
+.hero, .about-hero {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -1110,6 +1117,14 @@ nav {
     border-radius: 20px;
   }
 
+  /* .abtWrapper {
+    padding-top: 0;
+  }
+
+  .abtWrapper iframe {
+    top: 30%!important;
+  } */
+
   .theFlex {
     display: flex;
     align-items: center;
@@ -1185,7 +1200,271 @@ nav {
     margin-top: -05px;
   }
 
+  .pictureDisplay img {
+    width: 100%;
+    height: auto;
+  }
+
+  .collaborate {
+    text-align: center;
+  }
+
+  .collaborate p {
+    font-family: Aeonik;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 49.2px;
+    text-align: center;
+    width: 100%;
+    max-width: 742px;
+    margin: 0 auto;
+  }
+
+  .collaborate p span {
+    color: #1949EA;
+  }
+
+  .theQuote {
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+  }
+
+  .quoteMark {
+    position: absolute;
+    top: 40%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .theQuote h2 {
+    font-family: Aeonik;
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 44.4px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .dash {
+    width: 5%;
+    position: absolute;
+    height: 1px;
+    border-bottom: 2px dashed #1949EA;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
+  }
+
+  .theQuote p {
+    font-family: Aeonik;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 39.6px;
+    color: #6C6C6C;
+    width: 100%;
+    max-width: 793px;
+    margin: 0 auto;
+  }
+
+  .abt-h2 h1{
+    font-family: Aeonik;
+    font-size: 53px;
+    font-weight: 500;
+    line-height: 63px;
+    text-align: left;
+  }
+
+  .abt-p {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #6B6B6B;
+  }
+
+  .abtSpan {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #6B6B6B;
+  }
+
+  .abtSpan a {
+    font-weight: 700;
+  }
+
+  .abt-video {
+    margin-top: 200px!important;
+    margin-bottom: 100px;
+  }
+
+  .abtWrapper h2, .goal h2 {
+    margin-top: -20%;
+    font-family: Aeonik;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 63px;
+    text-align: left;
+    color: #292929;
+  }
+
+  .goal h2 {
+    margin-top: 0;
+  }
+
+  /* .aboutText {
+    margin-top: 160px;
+  } */
+
+  .vAbout, .goal p {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #6B6B6B;
+  }
+
+  .vAbout span {
+    font-weight: 700;
+    color: black;
+  }
+
+  .abt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .abt-grid_child img {
+    width: 100%;
+    height: auto;
+  }
+
+  .nameTag {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    text-align: left;
+  }
+
+  .positionTag {
+    font-family: Aeonik;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #696969;
+  }
+
+  .mini-grid_chid {
+    height: 108px; 
+    display: flex; 
+    justify-content: start; 
+    flex-direction: column;
+  }
+
+  .socialIcon-block {
+    display: flex; 
+    gap: 8px; 
+    align-items: center;
+  }
+
+  .socialIcon {
+    transition: .3s ease-in-out;
+  }
+
+  .socialIcon:hover {
+    scale: 1.1;
+  }
+
+  .bg-design {
+    background: linear-gradient(180deg, #1949EA 0%, #AFBDEF 100%);
+    color: white;
+    padding: 16px;
+  }
+  
+  .learn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .learnHeader {
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .learnHeader h2 {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .header-Text h2{
+    font-family: Aeonik;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 63px;
+  }
+
+  .header-Text h2 span {
+    color:#1949EA;
+  }
+
+  .learnHeader p {
+    font-family: Aeonik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+  }
+
+  .header-Text p {
+    font-family: Aeonik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: #6B6B6B;
+  }
+
+  .header-Text p span {
+    color: black;
+    font-weight: 700;
+  }
+
+  .header-Text {
+    grid-column: span 2;
+  }
+
+  .video-block {
+    overflow: hidden;
+  }
+
 @media screen and (max-width: 991px) {
+    .aboutText {
+        margin-top: 0px;
+      }
     .logo-block img{
         width: 160px;
     }
@@ -1336,33 +1615,36 @@ nav {
         gap: 20px;
     }
 
-    /* .imgF {
-        width: 50%;
-        height: auto;
-      }
-    
-      .imgF1 {
-        width: 78%;
-        height: auto;
-        max-width: 185px;
-      }
-
-      .theFloat4 {
-        left: 48.8%;
-        top: 62.5%;
-      }
-
-      .theFloat5 {
-        right: -4%;
-        top: 47%;
-      } */
-
       .videoWrapper {
         position: relative;
         padding-bottom: 40%;
         /* 16:9 */
         padding-top: 25px;
         height: 300px;
+      }
+
+      .abt-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .learn-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .header-Text {
+        grid-column: span 3;
+      }
+
+      .empty {
+        display: none;
+      }
+
+      .abt-h2 h1 {
+        font-size: 40px;
       }
 }
 
@@ -1437,6 +1719,10 @@ nav {
         padding: 20px;
         width: 90%;
         bottom: -15%;
+    }
+
+    .abt-overlap {
+        bottom: -9%;
     }
     
     .overlap p {
@@ -1722,6 +2008,40 @@ nav {
     .review {
         padding-bottom: 250px;
     }
+
+    .learn-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-Text {
+        grid-column: span 2;
+    }
+
+    .goal-flex {
+        flex-direction: column;
+    }
+
+    .abt-h2 h1, .collaborate p {
+        font-size: 30px;
+        line-height: 43px;
+      }
+
+    .abt-p, .abtSpan {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        text-align: left;
+    }
+
+    .imagePlay {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .theQuote p {
+        font-size: 23px;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -1739,5 +2059,50 @@ nav {
 
     .contact-line p {
         font-size: 10px;
+    }
+    .abt-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+      }
+
+      .learn-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learnHeader {
+        border-radius: 10px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+    .learn-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-Text {
+        grid-column: span 1;
+        margin-bottom: 80px;
+    }
+
+    .abt-video {
+        margin-top: 120px!important;
+    }
+
+    .abtWrapper h2 {
+        margin-top: -30%;
+    }
+
+    .abtWrapper h2, .goal h2, .header-Text h2 {
+        font-size: 28px;
+    }
+
+    .header-Text h2 {
+        line-height: 43px;
+    }
+
+    .vAbout, .goal p {
+        font-size: 14px;
     }
 }
