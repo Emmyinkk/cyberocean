@@ -120,3 +120,10 @@ const observer2 = new IntersectionObserver(entries => {
 observedElements2.forEach(element => {
     observer2.observe(element);
 });
+
+
+
+
+// UPDATE YEAR
+let date = new Date().getFullYear();
+document.getElementById("currentYear").textContent = date;
