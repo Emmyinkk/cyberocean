@@ -2061,8 +2061,8 @@ nav {
     }
 
     .imagePlay {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     
     .theQuote p {
@@ -2134,5 +2134,16 @@ nav {
 
     .vAbout, .goal p {
         font-size: 14px;
+    }
+
+    .pictureDisplay {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .pictureDisplay img {
+        width: 100%;
+        flex: 0 0 auto;
     }
 }

@@ -653,5 +653,25 @@
 
 
     <script src="script.js"></script>
+    <script>
+        
+        // TRANSITION BETWEEN TECH AND BUSINESS
+        window.onload = function() {
+        const wordElement = document.getElementById('tech');
+        const words = ['Tech', 'Business'];
+        let currentIndex = 0;
+
+        function toggleWord() {
+            wordElement.classList.add('hide'); // Apply hide class to fade out
+            setTimeout(function() {
+            wordElement.textContent = words[currentIndex];
+            wordElement.classList.remove('hide'); // Remove hide class to fade in
+            currentIndex = (currentIndex + 1) % words.length;
+            }, 500); // Wait for the fade out transition to complete (500ms)
+        }
+
+        setInterval(toggleWord, 3000); // Change word every 3 seconds
+        };
+    </script>
 </body>
 </html>

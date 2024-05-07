@@ -29,27 +29,6 @@ function openNav() {
         
     }
 }
-
-
-
-
-// TRANSITION BETWEEN TECH AND BUSINESS
-  window.onload = function() {
-    const wordElement = document.getElementById('tech');
-    const words = ['Tech', 'Business'];
-    let currentIndex = 0;
-  
-    function toggleWord() {
-      wordElement.classList.add('hide'); // Apply hide class to fade out
-      setTimeout(function() {
-        wordElement.textContent = words[currentIndex];
-        wordElement.classList.remove('hide'); // Remove hide class to fade in
-        currentIndex = (currentIndex + 1) % words.length;
-      }, 500); // Wait for the fade out transition to complete (500ms)
-    }
-  
-    setInterval(toggleWord, 3000); // Change word every 3 seconds
-  };
   
   
 
@@ -122,6 +101,48 @@ observedElements2.forEach(element => {
 });
 
 
+window.onload = function() {
+  const flexContainer = document.querySelector('.pictureDisplay');
+  const images = flexContainer.querySelectorAll('img');
+  const scrollSpeed = 1; // Adjust the scroll speed as needed
+  const totalWidth = flexContainer.scrollWidth; // Total width of all images
+  let scrollPos = 0;
+  let isPaused = false;
+  
+  function scrollImages() {
+      if(!isPaused) {
+          scrollPos += scrollSpeed;
+          if (scrollPos >= totalWidth) {
+              scrollPos = 0;
+          flexContainer.scrollLeft = 0;
+          } else {
+              flexContainer.scrollLeft += scrollSpeed;
+          }
+      }
+      
+  }
+  setInterval(scrollImages, 10); // Adjust the interval for smoother or faster scrolling
+
+  // Pause scrolling when the cursor is over the container
+  flexContainer.addEventListener('mouseenter', function() {
+      isPaused = true;
+  });
+
+  // Resume scrolling when the cursor leaves the container
+  flexContainer.addEventListener('mouseleave', function() {
+      isPaused = false;
+  });
+
+  // Pause scrolling when there's a touch input
+  flexContainer.addEventListener('touchstart', function() {
+      isPaused = true;
+  });
+
+  // Resume scrolling when the touch input ends
+  flexContainer.addEventListener('touchend', function() {
+      isPaused = false;
+  });
+};
 
 
 // UPDATE YEAR
