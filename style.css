@@ -2142,6 +2142,10 @@ nav {
         overflow-x: auto;
     }
 
+    .pictureDisplay::-webkit-scrollbar {
+        display: none;
+    }
+
     .pictureDisplay img {
         width: 100%;
         flex: 0 0 auto;
