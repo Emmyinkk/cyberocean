@@ -176,7 +176,7 @@ nav {
 }
 
 .link-list_flex {
-    width: 50%;
+    width: 20%;
 }
 
 .small-nav {    
@@ -1318,6 +1318,11 @@ nav {
     line-height: 63px;
     text-align: left;
     color: #292929;
+  }
+
+  .goal {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .goal h2 {
