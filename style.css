@@ -1497,6 +1497,10 @@ nav {
     overflow: hidden;
   }
 
+  .program-btn{
+    width: 24%;
+}
+
 @media screen and (max-width: 991px) {
     .aboutText {
         margin-top: 0px;
@@ -1722,11 +1726,6 @@ nav {
 
     .streched {
         width: 100%;
-    }
-
-
-    .program-btn {
-        text-align: center;
     }
 
     .mid-grid {
@@ -2082,6 +2081,11 @@ nav {
     .smallTag p {
         font-size: 12px;
     }
+
+    .program-btn {
+        text-align: center;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -2103,6 +2107,7 @@ nav {
     .abt-grid {
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
+        gap: 50px;
     }
 
     .learn {
