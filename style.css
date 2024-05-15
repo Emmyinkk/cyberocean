@@ -1498,7 +1498,7 @@ nav {
   }
 
   .program-btn{
-    width: 24%;
+    width: 110px;
 }
 
 @media screen and (max-width: 991px) {
@@ -2108,6 +2108,10 @@ nav {
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
         gap: 50px;
+    }
+
+    .program-btn {
+        width: 110px;
     }
 
     .learn {
